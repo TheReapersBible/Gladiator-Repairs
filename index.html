@@ -6,6 +6,7 @@
   <title>Gladiators Credit</title>
 
   <style>
+
     *{
       margin:0;
       padding:0;
@@ -14,16 +15,16 @@
     }
 
     body{
-      background:#000;
+      background:black;
       color:white;
       overflow-x:hidden;
     }
 
     header{
-      padding:20px 8%;
       display:flex;
       justify-content:space-between;
       align-items:center;
+      padding:25px 8%;
       border-bottom:1px solid #222;
       position:sticky;
       top:0;
@@ -32,7 +33,7 @@
     }
 
     .logo{
-      font-size:32px;
+      font-size:34px;
       font-weight:900;
       color:gold;
     }
@@ -54,10 +55,14 @@
       display:flex;
       justify-content:center;
       align-items:center;
-      padding:80px 8%;
-      gap:60px;
       flex-wrap:wrap;
-      background:linear-gradient(to bottom, #000, #111);
+      gap:60px;
+      padding:80px 8%;
+      background:
+      linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)),
+      url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1800&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
     }
 
     .hero-text{
@@ -66,9 +71,10 @@
     }
 
     .hero-text h1{
-      font-size:75px;
+      font-size:85px;
       line-height:1;
       margin-bottom:25px;
+      font-weight:900;
     }
 
     .hero-text span{
@@ -78,26 +84,24 @@
     .hero-text p{
       color:#ccc;
       font-size:20px;
-      line-height:1.7;
-      margin-bottom:35px;
+      line-height:1.8;
       max-width:650px;
+      margin-bottom:35px;
     }
 
     .btns{
       display:flex;
-      gap:20px;
       flex-wrap:wrap;
+      gap:20px;
     }
 
     .btn{
-      padding:16px 35px;
-      border:none;
+      padding:16px 34px;
       border-radius:14px;
       font-size:18px;
       font-weight:bold;
-      cursor:pointer;
-      transition:.3s;
       text-decoration:none;
+      transition:.3s;
       display:inline-block;
     }
 
@@ -113,7 +117,6 @@
     .outline-btn{
       border:2px solid gold;
       color:gold;
-      background:transparent;
     }
 
     .outline-btn:hover{
@@ -124,22 +127,35 @@
     .hero-card{
       flex:1;
       min-width:320px;
+      max-width:520px;
       background:#111;
       border:2px solid gold;
       border-radius:30px;
-      padding:50px;
-      text-align:center;
-      box-shadow:0 0 40px rgba(255,215,0,0.3);
+      padding:25px;
+      box-shadow:0 0 40px rgba(255,215,0,.25);
+    }
+
+    .hero-card img{
+      width:100%;
+      border-radius:22px;
+      margin-bottom:20px;
+    }
+
+    .gladiator-img{
+      height:350px;
+      object-fit:cover;
     }
 
     .hero-card h2{
       color:gold;
-      font-size:38px;
-      margin:20px 0;
+      font-size:40px;
+      margin-bottom:18px;
+      text-align:center;
     }
 
     .hero-card p{
       color:#ccc;
+      text-align:center;
       line-height:1.8;
     }
 
@@ -181,13 +197,13 @@
     }
 
     .service-box:hover{
-      border-color:gold;
       transform:translateY(-8px);
+      border-color:gold;
     }
 
     .service-box h3{
-      color:gold;
       font-size:30px;
+      color:gold;
       margin:20px 0;
     }
 
@@ -197,17 +213,17 @@
     }
 
     .booking{
+      max-width:850px;
+      margin:auto;
       background:#111;
       border-radius:30px;
       padding:60px;
-      max-width:850px;
-      margin:auto;
       border:1px solid #222;
     }
 
     .booking h2{
-      font-size:50px;
       text-align:center;
+      font-size:55px;
       margin-bottom:15px;
     }
 
@@ -230,10 +246,9 @@
 
     input, textarea{
       padding:18px;
-      border:none;
       border-radius:14px;
-      background:black;
       border:1px solid #333;
+      background:black;
       color:white;
       font-size:16px;
     }
@@ -243,9 +258,14 @@
       resize:none;
     }
 
+    button{
+      border:none;
+      cursor:pointer;
+    }
+
     footer{
-      border-top:1px solid #222;
       text-align:center;
+      border-top:1px solid #222;
       padding:40px 20px;
       color:#777;
       margin-top:80px;
@@ -254,147 +274,204 @@
     @media(max-width:768px){
 
       .hero-text h1{
-        font-size:55px;
+        font-size:58px;
       }
 
-      .section-title h2{
-        font-size:40px;
+      .section-title h2,
+      .booking h2{
+        font-size:42px;
       }
 
       .booking{
         padding:35px;
       }
+
     }
+
   </style>
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">Gladiators Repairs</div>
+<header>
 
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#booking">Booking</a>
-    </nav>
-  </header>
+  <div class="logo">Gladiators Credit</div>
 
-  <section class="hero">
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#booking">Booking</a>
+  </nav>
 
-    <div class="hero-text">
-      <h1>Fight For Better <span>Credit</span></h1>
+</header>
+
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h1>
+      Fight For Better <span>Credit</span>
+    </h1>
+
+    <p>
+      Gladiators Credit helps clients repair and rebuild their credit through
+      professional dispute services, financial guidance, and personalized
+      strategies designed to help you win financially.
+    </p>
+
+    <div class="btns">
+
+      <a href="#booking" class="btn gold-btn">
+        Book Consultation
+      </a>
+
+      <a href="mailto:creditspecialistfrazierii@gmail.com" class="btn outline-btn">
+        Contact Us
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="hero-card">
+
+    <img
+      src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+      alt="Building Credit"
+    >
+
+    <img
+      src="https://images.unsplash.com/photo-1604079628040-94301bb21b91?q=80&w=1200&auto=format&fit=crop"
+      alt="Gladiator"
+      class="gladiator-img"
+    >
+
+    <h2>Gladiators Credit</h2>
+
+    <p>
+      We help remove inaccurate negative items, improve your financial profile,
+      and guide you toward a stronger future with confidence.
+    </p>
+
+  </div>
+
+</section>
+
+<section id="services">
+
+  <div class="section-title">
+
+    <h2>
+      Our <span>Services</span>
+    </h2>
+
+    <p>
+      Credit solutions built to help you dominate financially.
+    </p>
+
+  </div>
+
+  <div class="services">
+
+    <div class="service-box">
+
+      <div style="font-size:60px;">📈</div>
+
+      <h3>Credit Repair</h3>
 
       <p>
-        Gladiators Repairs helps clients repair and rebuild their credit with
-        professional dispute services, financial guidance, and personalized
-        strategies designed to help you reach your goals.
+        We dispute inaccurate accounts, collections, charge-offs,
+        and negative reporting items.
       </p>
 
-      <div class="btns">
-        <a href="#booking" class="btn gold-btn">Book Consultation</a>
-        <a href="mailto:creditspecialistfrazierii@gmail.com" class="btn outline-btn">
-          Contact Us
-        </a>
-      </div>
     </div>
 
-    <div class="hero-card">
-      <div style="font-size:90px;">⚔️</div>
+    <div class="service-box">
 
-      <h2>Gladiators Repairs</h2>
+      <div style="font-size:60px;">🏦</div>
+
+      <h3>Credit Building</h3>
 
       <p>
-        We help remove inaccurate negative items, improve your financial profile,
-        and guide you toward a stronger future with confidence.
+        Learn strategies to improve utilization, payment history,
+        and overall credit health.
       </p>
+
     </div>
 
-  </section>
+    <div class="service-box">
 
-  <section id="services">
+      <div style="font-size:60px;">💳</div>
 
-    <div class="section-title">
-      <h2>Our <span>Services</span></h2>
+      <h3>Financial Coaching</h3>
 
       <p>
-        Credit solutions built to help you win financially.
-      </p>
-    </div>
-
-    <div class="services">
-
-      <div class="service-box">
-        <div style="font-size:60px;">📈</div>
-
-        <h3>Credit Repair</h3>
-
-        <p>
-          We dispute inaccurate accounts, collections, charge-offs,
-          and negative reporting items.
-        </p>
-      </div>
-
-      <div class="service-box">
-        <div style="font-size:60px;">🏦</div>
-
-        <h3>Credit Building</h3>
-
-        <p>
-          Learn strategies to improve utilization, payment history,
-          and overall credit health.
-        </p>
-      </div>
-
-      <div class="service-box">
-        <div style="font-size:60px;">💳</div>
-
-        <h3>Financial Coaching</h3>
-
-        <p>
-          Personalized guidance to help you understand and manage your
-          finances more effectively.
-        </p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="booking">
-
-    <div class="booking">
-
-      <h2>Book A <span>Consultation</span></h2>
-
-      <p>
-        Fill out the form below and Gladiators Repairs will contact you.
+        Personalized guidance to help you better understand and manage
+        your finances.
       </p>
 
-      <form action="https://formsubmit.co/creditspecialistfrazierii@gmail.com" method="POST">
-
-        <input type="text" name="name" placeholder="Your Name" required>
-
-        <input type="email" name="email" placeholder="Your Email" required>
-
-        <input type="tel" name="phone" placeholder="Phone Number">
-
-        <textarea name="message" placeholder="Tell us about your credit goals"></textarea>
-
-        <input type="hidden" name="_captcha" value="false">
-
-        <button type="submit" class="btn gold-btn">
-          Submit Booking Request
-        </button>
-
-      </form>
-
     </div>
 
-  </section>
+  </div>
 
-  <footer>
-    © 2026 Gladiators Credit — All Rights Reserved
-  </footer>
+</section>
+
+<section id="booking">
+
+  <div class="booking">
+
+    <h2>
+      Book A <span>Consultation</span>
+    </h2>
+
+    <p>
+      Fill out the form below and Gladiators Credit will contact you directly.
+    </p>
+
+    <form
+      action="https://formsubmit.co/creditspecialistfrazierii@gmail.com"
+      method="POST"
+    >
+
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+      >
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+      >
+
+      <input
+        type="tel"
+        name="phone"
+        placeholder="Phone Number"
+      >
+
+      <textarea
+        name="message"
+        placeholder="Tell us about your credit goals"
+      ></textarea>
+
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit" class="btn gold-btn">
+        Submit Booking Request
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Gladiators Credit — All Rights Reserved
+</footer>
 
 </body>
 </html>
